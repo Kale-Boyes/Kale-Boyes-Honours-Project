@@ -83,7 +83,7 @@ for lc_file in file_list:
                 f.write(str(ast_num) + ' ' + str(data['co_colour'][0]) + ' ' + str(data['co_colour_err'][0]) + ' ' + str(data['G'][0]) + ' ' + str(data['G_err'][0]) + ' D\n')
  
 
-# The expected c-o colour a slope parameters for S and C types
+# The expected c-o colour and slope parameters for S- and C-types
 # Erasmus et al. 2020
 ax.axvline(x=0.388, ls = '--', color = 'orange', lw=2 ,label = 'Expected S')
 ax.axvline(x=0.249, ls = '-.', color = 'lime' ,lw=2 , label = 'Expected C')
