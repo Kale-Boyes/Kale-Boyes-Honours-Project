@@ -84,11 +84,13 @@ for lc_file in file_list:
  
 
 # The expected c-o colour a slope parameters for S and C types
+# Erasmus et al. 2020
 ax.axvline(x=0.388, ls = '--', color = 'orange', lw=2 ,label = 'Expected S')
 ax.axvline(x=0.249, ls = '-.', color = 'lime' ,lw=2 , label = 'Expected C')
 
+# Lagerkvist et al. 1990
 ax.axhline(y=0.23, ls = '--', color = 'orange', lw=2 )
-ax.axhline(y=0.13, ls = '-.', color = 'lime' ,lw=2)
+ax.axhline(y=0.05, ls = '-.', color = 'lime' ,lw=2)
 
 handles, labels = plt.gca().get_legend_handles_labels()
 by_label = OrderedDict(zip(labels, handles))
